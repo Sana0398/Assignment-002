@@ -132,7 +132,77 @@
     /* margin-left: 50px; */
 }
 
+.standard-curriculam{
+    background-image: url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.stand-title{
+    font-size: 2.875rem;
+    font-weight: bold;
+    text-align: center;
+}
+.stand-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+    
+}
+.stand-card-prop{
+    box-shadow: 0 0 28.3px .94px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 19px;
+    padding: 53px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.stand-card1{
+    
+    background-image: linear-gradient(rgba(222, 245, 255, 1),rgba(255, 255, 255, 1));
+    color: rgba(100, 200, 255, 1);
+}
+.stand-card2{
+   
+    background-image: linear-gradient(rgba(255, 244, 220, 1),rgba(255, 255, 255, 1));
+    color: rgba(240, 170, 0, 1);
+}
+.stand-card3{
+    
+    background-image: linear-gradient(rgba(242, 232, 255, 1),rgba(255, 255, 255, 1));
+    color: rgba(135, 0, 255, 1);
+}
 
+
+
+.stand-card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+.stand-card-text{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+}
+.stand-icon{
+    height: 60px;
+    width: 60px;
+    background:orange;
+    margin-left: 10px;
+    border-radius: 50%;
+    
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
 
 
   @media screen and (max-width:576px) {
@@ -151,12 +221,17 @@
     .banner{
         flex-direction: column-reverse;
         margin: 0 auto;
+        
     }
     .banner-body{
         text-align: center;
     }
     .banner-img{
         max-width: 340px;
+    }
+    .stand-cards{
+        flex-direction: column;
+        gap: 12px;
     }
   }
   
