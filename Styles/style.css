@@ -205,6 +205,9 @@ main{
     align-items: center;
     
 }
+.stand-icon:hover{
+  background-color: skyblue;
+}
 .icon{
     display: flex;
     justify-content: center;
@@ -408,19 +411,11 @@ main{
         text-align: center;
     }
     .banner-img{
-     width: calc(100% - 40px);
+     width: calc(100% - 32px);
       margin: 0 auto;
+      
     }
-   /* .banner-title{
-    font-size: 2rem;
-   }
-   .banner-text{
-    font-size: .9rem;
-   }
-   .banner-btn{
-    font-size: 1rem;
-   } */
-
+  
   
     .standard-curriculam{
       margin: 0 auto;
