@@ -6,12 +6,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
 .raleway-font {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
   /*Header Components*/
@@ -127,7 +129,7 @@
     font-weight: bold;
 }
 .banner-img{
-    max-width: 468px;
+    max-width: 100%;
     align-items: center;
     /* margin-left: 50px; */
 }
@@ -161,6 +163,7 @@
     padding: 53px 40px;
     font-size: 1rem;
     font-weight: bold;
+
 }
 .stand-card1{
     
@@ -196,6 +199,7 @@
     background:orange;
     margin-left: 10px;
     border-radius: 50%;
+    align-items: center;
     
 }
 .icon{
@@ -203,10 +207,171 @@
     justify-content: center;
     margin-bottom: 60px;
 }
+.arrow-right{
+  width: 14px;
+  height: 14px;
+  border-left: 4px solid white;
+  border-top: 4px solid white;
+  transform: rotate(135deg) skew(10deg, 10deg);
+  margin-left: 15px;
+  margin-top: 20px;
+  
+}
+.arrow-left{
+  width: 14px;
+  height: 14px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: rotate(135deg) skew(10deg, 10deg);
+  margin-left: 25px;
+  margin-top: 20px;
+  
+}
+.stories-div{
+  background-image: url("../assets/bg.png") ,linear-gradient(rgba(255, 255, 255, 1) 70%,rgba(254, 163, 1, 1) );
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
+.stories-head{
+  font-size: 2.9rem;
+  font-weight: bold;
+}
+.stories{
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 140px;
+  gap: 19px;
 
+}
+
+.stories-left{
+  border-radius: 16px;
+  background-color: white;
+  
+}
+.stories-left-img{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+
+}
+.stories-button{
+  border-radius: 48px;
+  background-color: rgba(60, 216, 232, 1);
+  border: none;
+  padding: 15px 19px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  margin-top: -40px;
+  margin-left: 40px;
+}
+.stories-title{
+  padding-left: 39px;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+.stories-text{
+  padding-left: 39px;
+  padding-right: 70px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(102, 102, 102, 1);
+}
+.stories img{
+  /* max-width: 100%; */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.stories-right{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 19px;
+
+}
+.stories-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+
+}
+
+.stories-button-right{
+  border-radius: 48px;
+  background-color: rgba(149, 178, 38, 1);
+  border: none;
+  padding: 15px 19px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: -20px;
+
+}
+#right-2{
+  background-color: rgba(93, 88, 240, 1);
+}
+.view-btn{
+  font-size: 1.25rem;
+  padding: 10px 61px;
+  color: white;
+  background-color: black;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 60px;
+}
+
+.footer{
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: rgba(1, 172, 253, 1);
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  padding-top: 123px;
+  color: white;
+  padding-bottom: 173px;
+}
+
+.footer-logo{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.f-title{
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.middle-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.middle-list{
+  list-style: none;
+  
+}
+.middle-list a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  
+}
   @media screen and (max-width:576px) {
-    .nav-title,.nav-middle,.contact-btn{
+    .header-div{
+      margin: 0 auto;
+    }
+    .nav-title,.nav-middle,.contact-btn,.icon{
         display: none;
     }
     .navbar{ 
@@ -219,19 +384,36 @@
         display: block;
     }
     .banner{
+        width: calc(100% - 33px);
         flex-direction: column-reverse;
-        margin: 0 auto;
-        
+        margin: 0 auto;    
     }
+   
     .banner-body{
         text-align: center;
     }
     .banner-img{
-        max-width: 340px;
+     width: calc(100% - 40px);
+      margin: 0 auto;
+    }
+   /* .banner-title{
+    font-size: 2rem;
+   }
+   .banner-text{
+    font-size: .9rem;
+   }
+   .banner-btn{
+    font-size: 1rem;
+   } */
+    .standard-curriculam{
+      margin: 0 auto;
+      width: calc(100% - 33px);
+     
     }
     .stand-cards{
         flex-direction: column;
         gap: 12px;
+        
     }
   }
   
