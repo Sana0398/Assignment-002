@@ -106,7 +106,7 @@
 }
 
 .banner-title{
-    font-size: 4.6rem;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 .empower{
@@ -116,7 +116,7 @@
     color: rgba(1, 172, 253, 1);
 }
 .banner-text{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: rgba(17, 17, 17, 1);
 }
 .banner-btn{
@@ -125,7 +125,7 @@
     border: none;
     border-radius: 12px;
     padding: 10px 47px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 .banner-img{
@@ -133,7 +133,10 @@
     align-items: center;
     /* margin-left: 50px; */
 }
-
+main{
+  margin: 0 auto;
+  max-width: 1440px;
+}
 .standard-curriculam{
     background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
@@ -237,7 +240,7 @@
 
 }
 .stories-head{
-  font-size: 2.9rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 .stories{
@@ -251,6 +254,7 @@
 .stories-left{
   border-radius: 16px;
   background-color: white;
+  width: 100%;;
   
 }
 .stories-left-img{
@@ -416,6 +420,8 @@
    .banner-btn{
     font-size: 1rem;
    } */
+
+  
     .standard-curriculam{
       margin: 0 auto;
       width: calc(100% - 33px);
@@ -426,16 +432,35 @@
         gap: 12px;
         
     }
-    .stories-left{
+     .stories-left{
       display: none;
-    }
+    } 
     .stories-right{
+      grid-template-columns: repeat(2,1fr);
       gap: 11px;
       width: calc(100% - 32px);
+      margin-bottom: 16px;
+      margin-left: 16px;
     }
-    /* .stories{
-      max-width: 390px;
-    } */
+    .stories-card{
+      width: 100%;
+      font-size: .5rem;
+    }
+    .stories-card img{
+      width: 100%;
+
+    }
+    .stories-right button{
+      font-size: .5rem;
+      padding: 5px 11px;
+      margin-top: -10px;
+      margin-left: 0px;
+    }
+     .stories{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      padding: 0 0;
+    } 
     /* .stories-card{
       max-width: 173px;
     } */
